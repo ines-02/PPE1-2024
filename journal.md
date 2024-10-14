@@ -30,3 +30,5 @@ Commandes basics (mkdir,ls,cd, zip...):
 
 
 Cette ligne doit rester apres correction
+
+Ceci est un exemple d'erreur.
