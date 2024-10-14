@@ -33,4 +33,9 @@ Cette ligne doit rester apres correction
 
 Ceci est un exemple d'erreur.
 
+<<<<<<< Updated upstream
 correction d'erreur
+=======
+
+je cree un conflit
+>>>>>>> Stashed changes
