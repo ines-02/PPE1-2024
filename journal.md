@@ -28,7 +28,5 @@ Commandes basics (mkdir,ls,cd, zip...):
 
 # Seance 3 - Pipelines
 
-I am Error
-
 
 Cette ligne doit rester apres correction
