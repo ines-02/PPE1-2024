@@ -1,0 +1,40 @@
+# Commandes
+Exercice 1a:
+
+echo "Annotations en 2016 :" >> comptes.txt
+cat 2016/*/* | grep "2016" | wc -l >> comptes.txt
+echo "Annotations en 2017 :" >> comptes.txt
+cat 2017/*/* | grep "2017" | wc -l >> comptes.txt
+echo "Annotations en 2018 :" >> comptes.txt
+cat 2018/*/* | grep "2018" | wc -l >> comptes.txt
+
+Exercice 1b:
+
+echo "Annotations en 2016 :" >> location.txt
+grep "Location" 2016/*/* | wc -l >> location.txt
+echo "Annotations en 2017 :" >> location.txt
+grep "Location" 2017/*/* | wc -l >> location.txt
+echo "Annotations en 2018 :" >> location.txt
+grep "Location" 2018/*/* | wc -l >> location.txt
+
+Exercice 2a:
+
+cat 2016/*/* | grep Location | cut -f3 | sort | uniq -c | sort -nr | head -n 15 >> classement_2016.txt
+cat 2017/*/* | grep Location | cut -f3 | sort | uniq -c | sort -nr | head -n 15 >> classement_2017.txt
+cat 2018/*/* | grep Location | cut -f3 | sort | uniq -c | sort -nr | head -n 15 >> classement_2018.txt
+
+Exercice 2b:
+
+cat 2018/2/* | grep Location | cut -f3 | sort | uniq -c | sort -nr | head -n 15 >> classement_fevrier_2018.txt
+
+
+
+
+
+
+
+
+ 
+
+
+
