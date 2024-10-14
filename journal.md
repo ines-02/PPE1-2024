@@ -28,3 +28,4 @@ Commandes basics (mkdir,ls,cd, zip...):
 
 # Seance 3 - Pipelines
 
+I am Error
