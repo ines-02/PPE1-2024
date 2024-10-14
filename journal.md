@@ -26,5 +26,5 @@ Commandes basics (mkdir,ls,cd, zip...):
 - Creation d'une tag
 
 
-## Seance 3 - Pipelines
+# Seance 3 - Pipelines
 
