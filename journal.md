@@ -116,7 +116,8 @@ cat 2016/*/* : affiche le contenu de tous les fichiers dans tous les sous-réper
  
 ###### Exercice corriger les erreurs Github
 
-*J'ai eu beaucoup de difficultés !*
+*J'ai eu beaucoup de difficultés !!!*
+*
 
 
 ## Exercice Git II : corriger des erreurs
