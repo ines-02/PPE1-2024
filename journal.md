@@ -104,14 +104,14 @@ git stash show -p    -Cela affichera un diff complet, montrant les ajouts et les
 
 *J'ai bien compris les pipelines , les exercices sur les pipelines etaient pas trop difficiles cependant j'ai pris un peu de temps pour trouver la commande de l'exercice 2.a ( Établir le classement des 15 lieux les plus cités pour chaque année): cat 2016/*/* | grep Location | cut -f3 | sort | uniq -c | sort -nr | head -n 15 >> classement_2016.txt.*
 cat 2016/*/* : affiche le contenu de tous les fichiers dans tous les sous-répertoires du répertoire 2016.
-| grep Location : grep Location recherche et filtre les lignes contenant le mot "Location".
-| cut -f3 : Cette commande utilise cut pour extraire le troisième champ (ou colonne) de chaque ligne.
-| sort : sort trie les lignes résultantes par ordre alphabétique. Cela prépare les données pour la prochaine étape.
-| uniq -c : supprime les doublons et compte le nombre d'occurrences de chaque ligne. Le résultat sera une liste où chaque ligne est précédée de son nombre d'occurrences.
-| sort -nr : Cette commande trie à nouveau les lignes, mais cette fois-ci par nombre d'occurrences en ordre décroissant (-n pour numérique, -r pour inverse). Cela permet de voir les lignes les plus fréquentes en premier.
-| head -n 15 : prend les 15 premières lignes du résultat trié, ce qui signifie que vous obtiendrez les 15 "locations" les plus fréquentes.
+* | grep Location : grep Location recherche et filtre les lignes contenant le mot "Location".
+* | cut -f3 : Cette commande utilise cut pour extraire le troisième champ (ou colonne) de chaque ligne.
+* | sort : sort trie les lignes résultantes par ordre alphabétique. Cela prépare les données pour la prochaine étape.
+* | uniq -c : supprime les doublons et compte le nombre d'occurrences de chaque ligne. Le résultat sera une liste où chaque ligne est précédée de son nombre d'occurrences.
+* | sort -nr : Cette commande trie à nouveau les lignes, mais cette fois-ci par nombre d'occurrences en ordre décroissant (-n pour numérique, -r pour inverse). Cela permet de voir les lignes les plus fréquentes en premier.
+* | head -n 15 : prend les 15 premières lignes du résultat trié, ce qui signifie que vous obtiendrez les 15 "locations" les plus fréquentes.
 
- *Au debut j'ai eu aussi difficulté en trouvé comment Compter le nombre d’annotations par année (2016, 2017 et 2018), parce que je faisais la commande : cat 2016 | grep "2016" | wc -l , et le resultat etait 0. Aprés beucoup essayer j'ai comppris qu'il manquait "/*/*" :cat 2016/*/* | grep "2016" | wc -l >> comptes.txt**
+ *Au debut j'ai eu aussi difficulté en trouvé comment Compter le nombre d’annotations par année (2016, 2017 et 2018), parce que je faisais la commande : cat 2016 | grep "2016" | wc -l , et le resultat etait 0. Aprés beucoup essayer j'ai comppris qu'il manquait "/ * / * " :cat 2016/*/* | grep "2016" | wc -l >> comptes.txt*
 
  
 ###### Exercice corriger les erreurs Github
