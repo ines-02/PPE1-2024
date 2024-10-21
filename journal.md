@@ -121,7 +121,6 @@ cat 2016/*/* : affiche le contenu de tous les fichiers dans tous les sous-réper
 
 
 ## Exercice Git II : corriger des erreurs
-
 Cette ligne doit rester apres correction
 
 Ceci est un exemple d'erreur.
@@ -132,6 +131,28 @@ correction d'erreur
 
 je cree un conflit
 >>>>>>> Stashed changes
+
+## Seance 4- Scripts        *16/10/2024*      
+
+
+
+
+## EXERCICE Lire le code de la dernière diapo et décrire son fonctionnement dans votre journal de bord.
+- (#!/usr/bin/bash) = le script doit être exécuté avec l'interpréteur Bash.
+- (if [ $# -ne 1 ]; then
+    echo "Ce programme demande un argument"
+    exit
+fi)=C'est une condition qui vérifie si le nombre d'arguments est différent de 1 (-ne signifie "not equal"). Si ce n'est pas le cas, un message est affiché (echo) et le script se termine avec exit.
+- (FICHIER_URLS=$1) = le premier argument
+- (OK=0 et NOK=0)= valeurs de 2 variables
+- (while read -r LINE; do) =  lit le fichier ligne par ligne et chaque ligne est stockée dans la variable LINE.
+- (echo "La ligne : $LINE")= le script va afficher la variable pour chaque ligne
+- (if [[ $LINE =~ ^https?:// ]]; then)=condition vérifie si la ligne commence par "http://" ou "https://". (le ? indique que le s est optionnel)
+- (echo " ressemble à une URL valide " OK=$(expr $OK + 1))=Si la ligne est valide, le compteur OK est incrémenté de 1 et il afiche la message (echo)
+- (else echo " ne ressemble pas à une URL valide "NOK = $ ( expr $NOK + 1))= Sinon, le compteur NOK est incrémenté de 1 et il affiche la message (echo)
+- (done echo "$OK URLs et $NOK lignes douteuses")= on finis la condition avec done , et il affiche les resultats de les variables(le nombre total d'URLs valides et le nombre de lignes qui ne ressemblent pas à des URLs valides).
+- (done < $FICHIER_URLS) connecte la boucle while à un fichier
+
 
 
 
