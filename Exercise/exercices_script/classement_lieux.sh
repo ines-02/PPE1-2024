@@ -1,5 +1,11 @@
 #!/usr/bin/bash
 
+if [ "$#" -ne 3 ]; then
+    echo "Usage: $0 <année> <mois> <nombrelieux>"
+    exit 1
+fi
+
+
 ANNEE=$1
 MOIS=$2
 N_LIEUX=$3
@@ -15,6 +21,7 @@ else
 
 
 fi
+exit 1 
 
 
 
