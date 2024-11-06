@@ -117,7 +117,6 @@ cat 2016/*/* : affiche le contenu de tous les fichiers dans tous les sous-réper
 ###### Exercice corriger les erreurs Github
 
 *J'ai eu beaucoup de difficultés à comprendre le fonctionnement de  git revert et git reset, !!!*
-*
 
 
 ## Exercice Git II : corriger des erreurs
@@ -168,7 +167,7 @@ fi)=C'est une condition qui vérifie si le nombre d'arguments est différent de 
 - (done < $FICHIER_URLS) connecte la boucle while à un fichier
 
 ###### Notes sur l'exercice
-*J'ai 
+*J'ai eu de difficultés à comprendre les variables et les conditions, j'ai besoin de m'etrainer plus et être plus familiarizé avec tout ça* 
 
 ## Séance 5- editeurs de text et web    *23/10/2024*
 
