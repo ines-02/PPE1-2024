@@ -138,9 +138,9 @@ je cree un conflit
 
 ###### Resume Scripts
 Il suffit d’écrire des commandes dans un fichier texte pour obtenir un script.
-• ajouter des commentaires #
-• ajouter un shebang #!/usr/bin/bash
-• rendre le fichier exécutable (avec chmod +x)
+- ajouter des commentaires #
+- ajouter un shebang #!/usr/bin/bash
+- rendre le fichier exécutable (avec chmod +x)
 Par convention, au début de l’exécution d’un script, l’interpréteur donne la valeur
 des arguments aux variables $1 $2 $3 . . .ex: fichier=$1
 Conditions possibles:
@@ -176,4 +176,53 @@ fi)=C'est une condition qui vérifie si le nombre d'arguments est différent de 
 - web (HTML,HTTP,LYNUX,wget,cURL)
       
 ###### Resume Web
+PAGE WEB
 
+projet:contenue textuel d’une page web
+
+HTML- langage de balisage pour representer des pages web- format unique
+
+<head>- on define le title de la page et le code
+
+<title>
+
+le code de statut (3. HTTP Response) permet d’avoir une idée du résultat d’une requête.
+
+**lynx (page web)-**  Lynx est un navigateur web en terminal. Cela lui donne des propriétés
+particulièrement intéressantes (affichage dépouillé).
+
+Lynx permet de récupérer et afficher dans le terminal (sans navigation) une page
+web avec uniquement du texte et des liens.
+Deux options permettent de :
+
+1. récupérer le contenu textuel d’une page pour l’afficher (sans navigation) → option -dump
+2. retirer la liste des liens d’une page à l’affichage → option -nolist
+
+**wget et cURL (client URL Request Library )** sont deux commandes qui vont pouvoir
+nous permettre de récupérer des pages web sans passer par un navigateur. Les deux
+commandes ont des différences qui les rendent intéressantes, même si on
+privilégiera cURL.
+
+la différence principale entre les deux commandes et que wget écrit dans un fichier et cURL écrit dans le terminal.
+curl <URL>
+Quelques options utiles :
+• -i : va donner des informations sur l’interaction avec le serveur
+• -L : suit les redirections
+• -o <fichier> : indique un <fichier> de sortie
+• d’autres options à voir par vous-même : -I4 , -w, -s
+
+Regardons déjà les cas où ça va (ou ça fait semblant d’aller ?) :
+curl -i [https://www.perdu.com](https://www.perdu.com/)
+curl -i [https://www.google.com](https://www.google.com/)
+Et les cas où ça ne va pas :
+curl -i [http://www.github.com](http://www.github.com/)
+curl -i [http://www.plurital.org](http://www.plurital.org/)
+
+Ce qu’on voit avec ces commandes, ce sont des informations sur la réponse du serveur. Deux lignes nous intéressent tout particulièrement :
+• La première de chaque bloc d’entête : HTTP/1.1 XZY <message>
+• Celle souvent juste après : content-type: <informations>
+Il s’agit d’un résumé de la communication entre le client (nous) et le serveur (le site hébergé quelque part sur le net). Ces informations sont issues du protocole HTTP.
+
+sudo apt install npm
+
+npm i bash-language-server
