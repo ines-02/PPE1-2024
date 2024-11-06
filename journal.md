@@ -116,7 +116,7 @@ cat 2016/*/* : affiche le contenu de tous les fichiers dans tous les sous-réper
  
 ###### Exercice corriger les erreurs Github
 
-*J'ai eu beaucoup de difficultés !!!*
+*J'ai eu beaucoup de difficultés à comprendre le fonctionnement de  git revert et git reset, !!!*
 *
 
 
@@ -134,8 +134,22 @@ je cree un conflit
 
 ## Seance 4- Scripts        *16/10/2024*      
 
+- Les scripts
 
-
+###### Resume Scripts
+Il suffit d’écrire des commandes dans un fichier texte pour obtenir un script.
+• ajouter des commentaires #
+• ajouter un shebang #!/usr/bin/bash
+• rendre le fichier exécutable (avec chmod +x)
+Par convention, au début de l’exécution d’un script, l’interpréteur donne la valeur
+des arguments aux variables $1 $2 $3 . . .ex: fichier=$1
+Conditions possibles:
+a -eq b si a est égal à b (equal)
+a -ne b si a est différent de b (not equal)
+a -lt b si a est plus petit que b (less than)
+a -gt b si a est plus grand que b (greater than)
+a -le b si a est inférieur ou égal à b
+a -ge b si a supérieur ou égal à b
 
 ## EXERCICE Lire le code de la dernière diapo et décrire son fonctionnement dans votre journal de bord.
 - (#!/usr/bin/bash) = le script doit être exécuté avec l'interpréteur Bash.
@@ -153,6 +167,13 @@ fi)=C'est une condition qui vérifie si le nombre d'arguments est différent de 
 - (done echo "$OK URLs et $NOK lignes douteuses")= on finis la condition avec done , et il affiche les resultats de les variables(le nombre total d'URLs valides et le nombre de lignes qui ne ressemblent pas à des URLs valides).
 - (done < $FICHIER_URLS) connecte la boucle while à un fichier
 
+###### Notes sur l'exercice
+*J'ai 
 
+## Séance 5- editeurs de text et web    *23/10/2024*
 
+- éditeurs de texte (helix, vim, nano, micro)
+- web (HTML,HTTP,LYNUX,wget,cURL)
+      
+###### Resume Web
 
