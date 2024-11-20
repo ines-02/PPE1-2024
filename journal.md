@@ -225,3 +225,18 @@ Il s’agit d’un résumé de la communication entre le client (nous) et le ser
 sudo apt install npm
 
 npm i bash-language-server
+
+
+## Séance 6- Script de base et fichiers de URL            *6/11/2024*
+
+
+
+## Séance 7-Introdution à HTML            *13/11/2024*
+
+
+###### Notes sur l'exercice
+*J'ai pas reussi à faire l'exercice bonus sur les bigrammes correctement.Il affiche des mots repetés. Était trés difficil et j'ai pas trouvé une solution.*
+
+
+
+## Séance 8             *20/11/2024*
