@@ -181,9 +181,9 @@ projet:contenue textuel d’une page web
 
 HTML- langage de balisage pour representer des pages web- format unique
 
-<head>- on define le title de la page et le code
+head- on define le title de la page et le code
 
-<title>
+title
 
 le code de statut (3. HTTP Response) permet d’avoir une idée du résultat d’une requête.
 
@@ -203,11 +203,11 @@ commandes ont des différences qui les rendent intéressantes, même si on
 privilégiera cURL.
 
 la différence principale entre les deux commandes et que wget écrit dans un fichier et cURL écrit dans le terminal.
-curl <URL>
+curl URL
 Quelques options utiles :
 • -i : va donner des informations sur l’interaction avec le serveur
 • -L : suit les redirections
-• -o <fichier> : indique un <fichier> de sortie
+• -o fichier : indique un fichier de sortie
 • d’autres options à voir par vous-même : -I4 , -w, -s
 
 Regardons déjà les cas où ça va (ou ça fait semblant d’aller ?) :
@@ -228,7 +228,10 @@ npm i bash-language-server
 
 
 ## Séance 6- Script de base et fichiers de URL            *6/11/2024*
-
+ exercices 1 et 2 dans les slides (lecture du fichier d'URL, récupération des codes HTTP et de l'encodage de la page)
+###### Notes sur l'exercice
+*j'ai pas eu trop de difficultés 
+*-curl fait l'extration du contenu des Urls.
 
 
 ## Séance 7-Introdution à HTML            *13/11/2024*
@@ -239,4 +242,43 @@ npm i bash-language-server
 
 
 
-## Séance 8             *20/11/2024*
+## Séance 8-Créer et déployer une page web             *20/11/2024*
+###### Notes sur l'exercice
+*J'ai géneré ma page web pour l'exercice du mini projet, j'ai bien aimé !
+Quelques choses importantes:
+- En premier specifier le type de document :"!DOCTYPE html" (tout entre valises) 
+- html +/html (dubut et fin)
+- titre  website: title 
+- type d'encodage : meta charset=”UTF-8”
+- type d'heading ( h1-h6)  h1 c'est le plus grand
+- paragraphes:p
+- noir:b
+- italique:i
+- space sans rien:br/
+- line to separete:hr/
+- lettre grand ou petit :big; small
+- commentaire !— ola —
+taille lettre : font-size:20px
+border:  style=”border: 1px(espessura) solid black”
+- le top : header 
+-  navigation menu nav
+- millieux:main
+footer informação adicional
+- Create a link :a href="https://github.com/ines-02">Mon GITHUB /a
+- ouvrir une noveaux page:a href="https://github.com/ines-02" target="_blank">Mon GITHUB /a
+- images:
+img src=”www.” alt “message si limage est removu” /
+- dimensions:img width=”100” height=”110”src=”www.” alt “mensagem que aparece caso a imagem seja removida” /
+- image avec link:
+a href=”ajcnceniw”
+img src=”www.” alt “mensagem que aparece caso a imagem seja removida” />/a
+- liste:
+ul
+li apples li
+li lemons li
+ul
+(si on utilise ol et pas ul la liste sera enumeré, on peut aussi utiliser comme ça : ol type”A” 
+
+## Decembre- travail sur le projet de groupe
+- journal du group 
+
